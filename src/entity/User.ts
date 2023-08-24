@@ -10,10 +10,7 @@ export enum RoleEnumType {
 @Entity('users')
 export class User extends Model {
     @Column()
-    firstName: string
-
-    @Column()
-    lastName: string
+    username: string
 
     @Column({
         unique: true
