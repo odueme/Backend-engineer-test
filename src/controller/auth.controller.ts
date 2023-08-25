@@ -38,7 +38,7 @@ const accessTokenCookieOptions: CookieOptions = {
   };
 
 
-  export const requestUserHandler = async(
+  export const registerUserHandler = async(
     req: Request<{}, {}, CreateUserInput>,
     res: Response,
     next: NextFunction
@@ -71,7 +71,7 @@ const accessTokenCookieOptions: CookieOptions = {
   }
 
 
-  export const LoginUserHandler = async (
+  export const loginUserHandler = async (
     req: Request<{}, {}, LoginUserInput>,
     res: Response,
     next: NextFunction
